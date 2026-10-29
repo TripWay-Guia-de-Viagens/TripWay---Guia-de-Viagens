@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --primary-color: #0d2b45;
+    --element-color: #3b82f6;
+    --card-color: #eff6ff;
+}
+
+nav {
+    padding: 20px 60px;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+#logo {
+    color: var(--card-color);
+    font-size: 2rem;
+}
+
+#way {
+    color: var(--element-color);
+    font-size: 2.2rem;
+}
