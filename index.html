@@ -1,58 +1,124 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>TripWay - Guia de Viagens</title>
 </head>
 <body>
-    <nav>
 
-        <a class="logo" href="./index.html">Trip<span class="way">Way</span></a>
+    <!-- NAVEGAÇÃO -->
+    <nav>
+        <a class="logo" href="./index.html">
+            Trip<span class="way">Way</span>
+        </a>
+
         <ul>
+            <li><a class="pages" href="./index.html">Home</a></li>
             <li><a class="pages" href="./pages/destinos.html">Destinos</a></li>
             <li><a class="pages" href="./pages/pacotes.html">Pacotes de Viagens</a></li>
             <li><a class="pages" href="./pages/contato.html">Contato</a></li>
         </ul>
     </nav>
-    
+
     <header class="header-container">
-        <h1 class="logo">Trip<span class="way">Way</span></h1>
-        <p>Aqui você encontra os guias de viagem mais completos e independentes dos principais destinos do mundo! São ínumeros guias para você fazer uma viagem inesquecível!</p>
+        <h1 class="hero-title">
+            Trip<span class="way">Way</span>
+        </h1>
+
+        <p>
+            Aqui você encontra os guias de viagem mais completos e
+            independentes dos principais destinos do mundo! São inúmeros
+            guias para você fazer uma viagem inesquecível!
+        </p>
     </header>
 
     <main>
-        <section>
+        <section class="welcome-section">
+
             <h2 class="welcome">Bem-vindo ao TripWay</h2>
-            <img class="home-image" src="./images/homeimage.png" width="700" alt="Pilha de fotos de viagem">
 
             <div class="content">
-            <a href="./pages/destinos.html">
-                <h3>Destinos</h3>
-                <p>Explore os destinos mais incríveis do mundo</p>
-            </a>
-            <a href="./pages/pacotes.html">
-                <h3>Pacotes de Viagens</h3>
-                <p>Encontre pacotes de viagens para todos os gostos e bolsos</p>
-            </a>
-            <a href="./pages/contato.html">
-                <h3>Contato</h3>
-                <p>Entre em contato conosco para mais informações</p>
-            </a>
-             </div>
-            
-        <section>
-            <h2>Sobre o TripWay</h2>
-            <p>O TripWay é um guia de viagens independente que oferece informações detalhadas sobre os principais destinos do mundo. Nosso objetivo é ajudar os viajantes a planejar suas viagens de forma eficiente e aproveitar ao máximo cada experiência.</p>
+
+                <img
+                    class="home-image"
+                    src="./images/homeimage.png"
+                    alt="Pilha de fotografias de viagens"
+                >
+
+                <div class="nav-links">
+
+                    <a class="link-card" href="./pages/destinos.html">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <span class="card-text">
+                            <h3>Destinos</h3>
+                            <p>Explore os destinos mais incríveis do mundo</p>
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+
+                    <a class="link-card" href="./pages/pacotes.html">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-suitcase"></i>
+                        </span>
+
+                        <span class="card-text">
+                            <h3>Pacotes de Viagens</h3>
+                            <p>Encontre pacotes de viagens para todos os gostos e bolsos</p>
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+
+                    <a class="link-card" href="./pages/contato.html">
+                        <span class="card-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+
+                        <span class="card-text">
+                            <h3>Contato</h3>
+                            <p>Entre em contato conosco para mais informações</p>
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+
+                </div>
+            </div>
         </section>
+        <section class="about-section">
+
+            <div class="about-text">
+                <h2>Sobre o TripWay</h2>
+
+                <p>
+                    O TripWay é um guia de viagens independente que oferece
+                    informações detalhadas sobre os principais destinos do
+                    mundo. Nosso objetivo é ajudar os viajantes a planejar
+                    suas viagens de forma eficiente e aproveitar ao máximo
+                    cada experiência.
+                </p>
+            </div>
+
+            <div class="about-illustration">
+                <i class="fa-solid fa-earth-americas globe"></i>
+                <i class="fa-solid fa-plane plane"></i>
+            </div>
+
         </section>
-       
+
     </main>
-    
+
     <footer>
         <p>© 2026 TripWay</p>
     </footer>
+
 </body>
 </html>
