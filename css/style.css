@@ -9,6 +9,7 @@
     --primary-color: #0d2b45;
     --element-color: #3b82f6;
     --card-color: #eff6ff;
+    --text-color: #405a78;
 }
 
 nav {
@@ -32,8 +33,12 @@ nav ul {
     font-size: 1.1rem;
 }
 
+.pages:hover {
+    color: var(--element-color);
+}
+
 .logo {
-    color: var(--card-color);
+    color: var(--background-color);
     font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -45,42 +50,269 @@ nav ul {
 
 .header-container {
     display: flex;
-    padding: 150px 60px;
     flex-direction: column;
-    background: linear-gradient(
-        to right,
-        rgba(13, 43, 69, 0.95),
-        rgba(13, 43, 69, 0.1)
-    ), url("../images/imagensDestino/portugal.jpg");
+    justify-content: center;
+    padding: 80px 60px;
+    min-height: 365px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(13, 43, 69, 0.95),
+            rgba(13, 43, 69, 0.1)
+        ),
+        url("../images/imagensDestino/portugal.jpg");
 
     background-size: cover;
 }
 
-.header-container p {
-    max-width: 600px;
+.hero-title {
     color: var(--background-color);
-    font-size: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: bold;
 }
-.header-container h1 {
-    font-size: 4rem;
+
+.header-container p {
+    max-width: 400px;
+    color: var(--background-color);
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.header-container h4 {
+    max-width: 400px;
+    color: var(--background-color);
+    font-size: 1.3rem;
+    line-height: 1.7;
 }
 
 main {
-    display: flex;
-    padding: 15px 60px;
-    align-items: center;
+    background-color: var(--background-color);
+}
+
+.welcome-section {
+    padding: 45px 60px 55px;
 }
 
 .welcome {
-    font-size: 2rem;
-}
-
-.home-image {
-    border: 5px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 25px;
 }
 
 .content {
     display: flex;
-    align-items: center;
     gap: 25px;
+    align-items: stretch;
+}
+
+.home-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 20px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+
+    padding: 20px 22px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: var(--primary-color);
+
+    transition: 0.2s;
+}
+
+.link-card:hover {
+    background-color: #dcecff;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 70px;
+    height: 70px;
+
+    background-color: var(--element-color);
+    color: var(--background-color);
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-text h3 {
+    font-size: 1.35rem;
+    margin-bottom: 5px;
+}
+
+.card-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.arrow {
+    color: #315b85;
+    font-size: 1.2rem;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 60px;
+    background-color: var(--card-color);
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.about-illustration {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 230px;
+}
+
+.globe {
+    color: #38a6c9;
+    font-size: 170px;
+}
+
+.plane {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    color: #21669a;
+    font-size: 3.5rem;
+    transform: rotate(-15deg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+
+    nav {
+        padding: 15px 25px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .home-image {
+        width: 100%;
+        max-height: 350px;
+    }
+
+    .link-card {
+        min-height: 120px;
+    }
+
+    .about-section {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .pages {
+        font-size: 0.9rem;
+    }
+
+    .header-container {
+        padding: 70px 25px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .header-container p {
+        font-size: 1.1rem;
+    }
+
+    .welcome-section {
+        padding: 30px 20px;
+    }
+
+    .welcome,
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 35px 25px;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .about-illustration {
+        width: 100%;
+    }
 }
