@@ -1,0 +1,83 @@
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    padding: 3rem;
+}
+
+.contact-image {
+    width: 50rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form-container {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background-color: var(--card-color);
+    font-size: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    font-size: 1.2rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group #mensagem {
+    height: 10rem;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.action-buttons button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact-section { flex-direction: column; gap: 2rem; padding: 1.5rem; }
+    .contact-image { width: 100%; }
+    .form-container { padding: 1.5rem; font-size: 1rem; }
+    .form-row { flex-direction: column; gap: 0; }
+}

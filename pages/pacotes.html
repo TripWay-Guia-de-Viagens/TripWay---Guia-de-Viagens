@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/destinos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>TripWay - Pacotes</title>
 </head>
+
 <body>
     <nav>
+        <a class="logo" href="../index.html"> Trip<span class="way">Way</span> </a>
+
         <ul>
-            <li><a href="../index.html">TripWay</a></li>
-            <li><a href="./destinos.html">Destinos</a></li>
-            <li><a href="./pacotes.html">Pacotes de Viagens</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a class="pages" href="../index.html">Home</a></li>
+            <li><a class="pages" href="./destinos.html">Destinos</a></li>
+            <li><a class="pages" href="./pacotes.html">Pacotes de Viagens</a></li>
+            <li><a class="pages" href="./contato.html">Contato</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Pacotes de Viagens</h1>
+    <header class="header-container">
+        <h1 class="hero-title">Pacotes de Viagens</h1>
         <p>Escolha seu pacote perfeito para a sua próxima viagem!</p>
     </header>
 
     <main>
         <section>
-            <ol>
-                <h2><li>Pacote Praia</li></h2>
-                <img src="../images/praia.png" width="500" alt="Praia tropical">
-                <p>passagem, hospedagem em resort ou pousada à beira-mar e passeios de barco. Ex.: Maceió, Fernando de Noronha.</p>
-                <p>Preço: R$ 3.500,00</p>
+            <ol class="destination-list">
+                <li class="destination-item">
+                    <div class="destination-info">
+                        <h2>1. Pacote Praia</h2>
+                        <p>Inclui passagem, hospedagem em resort ou pousada à beira-mar e passeios de barco. Ex.:
+                            Maceió, Fernando de Noronha.</p>
+                        <p>Preço: R$ 3.500,00</p>
+                    </div>
+                    <img src="../images/praia.png" width="500" alt="Praia tropical">
+                </li>
 
-                <h2><li>Pacote Aventura e Montanha</li></h2>
-                <img src="../images/montanha.png" width="500"alt="Trilhas em montanha">
-                <p>passagem, hospedagem em albergue ou pousada e passeios de trilhas. Ex.: Gramado, Canela.</p>
-                <p>Preço: R$ 2.800,00</p>
+                <li class="destination-item">
+                    <img src="../images/montanha.png" width="500" alt="Trilhas em montanha">
+                    <div class="destination-info">
+                        <h2>2. Pacote Aventura e Montanha</h2>
+                        <p>Passagem, hospedagem em albergue ou pousada e passeios de trilhas. Ex.: Gramado, Canela.</p>
+                        <p>Preço: R$ 2.800,00</p>
+                    </div>
+                </li>
 
-                <h2><li>Pacote Cultural e Histórico</li></h2>
-                <img src="../images/campos.png" width="500" alt="Museu">
-                <p>passagem, hospedagem em hotel ou pousada e passeios de museus e monumentos históricos. Ex.: Ouro Preto, Salvador.</p>
-                <p>Preço: R$ 2.200,00</p>
+                <li class="destination-item">
+                    <div class="destination-info">
+                        <h2>3. Pacote Cultural e Histórico</h2>
+                        <p>Passagem, hospedagem em hotel ou pousada e passeios de museus e monumentos históricos. Ex.:
+                            Ouro Preto, Salvador.</p>
+                        <p>Preço: R$ 2.200,00</p>
+                    </div>
+                    <img src="../images/campos.png" width="500" alt="Museu">
+                </li>
 
-                <h2><li>Pacote Internacional</li></h2>
-                <img src="../images/internacional.png" width="500"alt="Cidade turística">
-                <p>passagem, hospedagem em hotel ou hostel e passeios turísticos. Ex.: Paris, Nova York.</p>
-                <p>Preço: R$ 6.500,00</p>
+                <li class="destination-item">
+                    <img src="../images/internacional.png" width="500" alt="Cidade internacional">
+                    <div class="destination-info">
+                        <h2>4. Pacote Internacional</h2>
+                        <p>Passagem, hospedagem em hotel ou hostel e passeios turísticos. Ex.: Paris, Nova York.</p>
+                        <p>Preço: R$ 6.500,00</p>
+                    </div>
+                </li>
             </ol>
         </section>
     </main>
@@ -50,4 +77,5 @@
         <p>© 2026 TripWay</p>
     </footer>
 </body>
+
 </html>

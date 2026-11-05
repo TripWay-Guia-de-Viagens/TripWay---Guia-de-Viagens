@@ -12,6 +12,12 @@
     --text-color: #405a78;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -79,11 +85,24 @@ nav ul {
     line-height: 1.7;
 }
 
-.header-container h4 {
-    max-width: 400px;
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--element-color);
     color: var(--background-color);
-    font-size: 1.3rem;
-    line-height: 1.7;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+.header-container .btn {
+    align-self: flex-start;
+    margin-top: 1.5rem;
 }
 
 main {
@@ -235,6 +254,10 @@ footer {
 }
 
 /* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .hero-title { font-size: 3.5rem; }
+}
 
 @media (max-width: 850px) {
 

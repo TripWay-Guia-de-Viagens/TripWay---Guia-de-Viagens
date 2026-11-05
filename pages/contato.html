@@ -1,72 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <title>TripWay - Contato</title>
 </head>
+
 <body>
     <nav>
+        <a class="logo" href="../index.html"> Trip<span class="way">Way</span> </a>
+
         <ul>
-            <li><a href="../index.html">TripWay</a></li>
-            <li><a href="./destinos.html">Destinos</a></li>
-            <li><a href="./pacotes.html">Pacotes de Viagens</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a class="pages" href="../index.html">Home</a></li>
+            <li><a class="pages" href="./destinos.html">Destinos</a></li>
+            <li><a class="pages" href="./pacotes.html">Pacotes de Viagens</a></li>
+            <li><a class="pages" href="./contato.html">Contato</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Contato e Reserva</h1>
+    <header class="header-container">
+        <h1 class="hero-title">Contato e Reserva</h1>
         <p>Preencha o formulário abaixo para mais informações sobre nossos pacotes de viagem.</p>
     </header>
 
     <main>
-        <section>
-            <img src="../images/formulario.png" width="500" alt="Passaporte de viagem">
-            <h2>Formulario</h2>
+        <section class="contact-section">
+            <img src="../images/formulario.png" alt="Passaporte de viagem" class="contact-image">
 
-            <form action="">
-                <div>
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" placeholder="Digite seu nome">
-                </div>
+            <div class="form-container">
+                <h2>Formulário</h2>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Digite seu nome">
+                        </div>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Digite seu email">
-                </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Digite seu email">
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="destino">Destino</label>
-                    <select name="destino" id="destino">
-                        <option value="">Selecione um destino</option>
-                        <option value="suecia">Suécia</option>
-                        <option value="chile">Chile</option>
-                        <option value="portugal">Portugal</option>
-                        <option value="alemanha">Alemanha</option>
-                        <option value="rj">Rio de Janeiro</option>
-                        <option value="bahia">Bahia</option>
-                        <option value="sc">Santa Catarina</option>
-                    </select>
-                </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destino">Destino</label>
+                            <select name="destino" id="destino">
+                                <option value="">Selecione um destino</option>
+                                <option value="suecia">Suécia</option>
+                                <option value="chile">Chile</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="alemanha">Alemanha</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="bahia">Bahia</option>
+                                <option value="sc">Santa Catarina</option>
+                            </select>
+                        </div>
 
-                <div>
-                    <label for="data">Data da Viagem</label>
-                    <input type="date" id="data">
-                </div>
+                        <div class="form-group">
+                            <label for="data">Data da Viagem</label>
+                            <input type="date" id="data">
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="quantidade">Quantidade de Pessoas</label>
-                    <input type="number" id="quantidade" placeholder="Ex: 2">
-                </div>
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade de Pessoas</label>
+                        <input type="number" id="quantidade" placeholder="Ex: 2">
+                    </div>
 
-                <div>
-                    <label for="mensagem">Mensagem</label>
-                    <input type="text" id="mensagem" placeholder="Digite sua mensagem">
-                </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <input type="text" id="mensagem" placeholder="Digite sua mensagem">
+                    </div>
 
-                <button>Enviar</button>
-            </form>
+                    <div class="action-buttons">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -74,4 +91,5 @@
         <p>© 2026 TripWay</p>
     </footer>
 </body>
+
 </html>
