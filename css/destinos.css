@@ -12,6 +12,12 @@
     --text-color: #405a78;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -182,4 +188,10 @@ main {
         width: 100%;
         height: 180px;
     }
+}
+
+@media (max-width: 1024px) {
+    main { padding: 30px; }
+    .hero-title { font-size: 3.5rem; }
+    .destination-item { gap: 25px; }
 }

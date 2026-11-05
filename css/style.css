@@ -12,6 +12,12 @@
     --text-color: #405a78;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -234,6 +240,21 @@ footer {
     color: var(--background-color);
 }
 
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--element-color);
+    color: var(--background-color);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 850px) {
@@ -315,4 +336,10 @@ footer {
     .about-illustration {
         width: 100%;
     }
+}
+
+@media (max-width: 1024px) {
+    main { padding: 30px; }
+    .hero-title { font-size: 3.5rem; }
+    .destination-item { gap: 25px; }
 }
