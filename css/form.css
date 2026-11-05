@@ -5,11 +5,19 @@
     padding: 3rem;
 }
 
+.contact-image {
+    width: 50rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .form-container {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     background-color: var(--card-color);
     font-size: 1.5rem;
 }
@@ -23,7 +31,7 @@
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 
     font-size: 1.2rem;
 }
@@ -33,7 +41,7 @@
 }
 
 .form-group label {
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -53,12 +61,12 @@
 .action-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .action-buttons button {
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
     background-color: var(--primary-color);
     color: var(--background-color);
     border: none;
