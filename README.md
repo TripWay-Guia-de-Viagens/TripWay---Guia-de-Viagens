@@ -18,7 +18,7 @@ No Checkpoint 2, o projeto foi evoluído com CSS, identidade visual, layout com 
 ## Tecnologias Utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - Git
 - GitHub
 
@@ -26,5 +26,5 @@ No Checkpoint 2, o projeto foi evoluído com CSS, identidade visual, layout com 
 
 - Home
 - Destinos
-- Pacotes ou Serviços
-- Contato ou Reserva
+- Pacotes
+- Contato
