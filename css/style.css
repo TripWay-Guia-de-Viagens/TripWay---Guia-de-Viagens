@@ -85,13 +85,6 @@ nav ul {
     line-height: 1.7;
 }
 
-.header-container h4 {
-    max-width: 400px;
-    color: var(--background-color);
-    font-size: 1.3rem;
-    line-height: 1.7;
-}
-
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -263,7 +256,6 @@ footer {
 /* RESPONSIVIDADE */
 
 @media (max-width: 1024px) {
-    main { padding: 30px; }
     .hero-title { font-size: 3.5rem; }
 }
 
